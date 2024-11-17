@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="money.png">
+</head>
+<body>
+    <h2>Expense Tracker</h2>
+    <div id="itemInputs">
+        <div class="inputWrapper">
+            <label for="amount">Enter Amount: </label>
+            <input type="text" class="inputBoxes" id="amount" placeholder="Amount...">
+            <label for="amount" class="require">*</label>
+        </div>
+        <div class="inputWrapper">
+            <label for="location">Location Spent: </label>
+            <input type="text" class="inputBoxes" id="location" placeholder="Location...">
+            <label for="location" class="require">*</label>
+        </div>
+        <div class="inputWrapper">
+            <label for="comments" id="comLab">Add Comment: </label>
+            <input type="text" class="inputBoxes" id="comments" placeholder="Comment...">
+        </div>
+    </div>
+    <div class="button">
+        <button class="btn" id="submit">Add</button>
+    </div>
+    <div id="container">
+        <div id="tableContainer">
+            <div id="table">
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Time</th>
+                            <th>Amount</th>
+                            <th>Location</th>
+                            <th>Comments</th>
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableData">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div id="totalspend"></div>
+    <div class="button">
+        <button id="deleteAll" class="btn">Delete All</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
